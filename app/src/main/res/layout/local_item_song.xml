@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/song_item_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".MainActivity"
+    >
+    <ImageView
+        android:id="@+id/mini_album_cover"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/no_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/mini_song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_toRightOf="@id/mini_album_cover"
+        android:layout_toEndOf="@id/mini_album_cover"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Show me the meaning of being lonely"
+        />
+    <TextView
+        android:id="@+id/mini_artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_below="@id/mini_song_title"
+        android:layout_toRightOf="@id/mini_album_cover"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_toEndOf="@id/mini_album_cover"
+        android:text="Backstreet Boys"/>
+    <TextView
+        android:id="@+id/mini_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mini_artist_name"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/mini_album_cover"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="3:59"
+        />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@id/mini_album_cover"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:paddingTop="2dp"-->
+        <!--&gt;-->
+    <!--</View>-->
+
+</RelativeLayout>
